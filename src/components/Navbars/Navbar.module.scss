@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.container {
+ 
+
+  background-color: $bg-color-nav;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  z-index: 1000;
+  
+  .logo {
+    margin-left: 8rem;
+    display: flex;
+    height: 3rem;
+    width: 10rem;
+    padding: 0.2rem;
+  }
+
+  
+  @include respond-to(tablet) { // de la 481 - 768
+	.uList {
+		font-size: small;
+		width: fit-content;
+		justify-content: space-around;
+		padding: 0;
+		margin: 0;
+		flex-grow: 10; // Va crește de 2 ori mai repede decât .logo
+		flex-shrink: 1; // Se va micșora de 2 ori mai repede decât .logo, dacă dorești
+	  }
+    .logo {
+      margin: 0;
+	  padding: 0;
+	  flex-grow: 1;
+	  flex-shrink: 10;
+    }
+  }
+
+  @include respond-to(mobile) { // pina la 481 cum vor fi stilurile
+	.uList{
+		display: none;
+		flex-direction: column;
+		width: 0;
+	}
+	.flex {
+		display: flex;
+	}
+	.burger{
+		display: flex;
+		width: 20%;
+		border: none;
+		background: $bg-color-nav;
+	}
+   
+  }
+}
+
+.uList{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	width: 40%;
+	padding-left:  3rem;
+	padding-right: 3rem;
+	li {
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: $text-color;
+		}
+	}
+}
+.customIcon{
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		stroke: $primary-blue;
+		stroke-width: 2;
+		path {
+		  stroke-linecap: square;
+		  stroke-linejoin: miter;
+		}
+}
+.closeImg{
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	stroke: $close-btn-color;
+	stroke-width: 2;
+	path {
+	  stroke-linecap: square;
+	  stroke-linejoin: miter;
+	}
+}
+.closeBtn{
+	border: 0;
+	background: $bg-color-nav;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.burger {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+

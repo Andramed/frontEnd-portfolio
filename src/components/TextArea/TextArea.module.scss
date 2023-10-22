@@ -1,0 +1,40 @@
+.inputGroup {
+    position: relative;
+	box-sizing: border-box;
+	width: 100%;
+    textarea {
+		width: 90%;
+        resize: vertical; // permite redimensionarea doar pe verticală
+        padding: 1rem;
+        border: none;
+		border-radius: 8px;
+        &:focus,
+        &:valid {
+            border: none;
+            outline: none;
+            border-color: rgb(150, 150, 200);
+            padding-top: 1rem;
+        }
+    }
+    label {
+        position: absolute;
+        left: 0;
+		top: 0;
+        padding: 0.8rem 2rem;
+        margin-left: 0.5em;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        color: rgb(0, 0, 0);
+    }
+
+    textarea:focus + label,
+    textarea:valid + label {
+        transform: translateY(-50%) scale(.9);
+        margin: 0em;
+        margin-left: 1.3em;
+        padding: 0.4em;
+        background-color: transparent;
+    }
+}
+
+

@@ -1,0 +1,29 @@
+{
+	"projects": [
+	  {
+		"projectLink": "https://reactors-project-9sic-a41fqt1q2-andramed.vercel.app/",
+		"demoProject": "path_to_demo_image/topPhoneDemo.png",
+		"descriptionsProject": {
+		  "title": "E-Commerce Platform",
+		  "overview": "An advanced e-commerce platform designed to provide users with an intuitive shopping experience. Built with scalability and user experience in mind, this platform incorporates a range of features essential for modern online shopping.",
+		  "coreFeatures": [
+			"User Authentication: Secure sign up and sign in processes, ensuring data protection and user identity validation.",
+			"Product Management: Allows users to seamlessly add, update, and manage their products on the platform.",
+			"Product Filtering & Sorting: Advanced filters for product categories, prices, and ratings, along with sorting capabilities for relevance, popularity, and newest additions",
+			"Contact Emailer: Integrated email system enabling users to reach out for inquiries or support directly from the platform."
+		  ],
+		  "chalengesLearning": [
+			"Database Integration: Integrating the MongoDB database required in-depth understanding and collaboration.",
+			"Time Management: With a project of this magnitude and in a team setting, effectively managing time was paramount.",
+			"Collaborative Decisions: Reconciling different visions and ideas from team members and coming to a consensus was a significant learning curve.",
+			"Tailwind & Next.js: Implementing Tailwind for styling and Next.js for server-side rendering was a deep dive into modern web technologies, enhancing our proficiency in these tools",
+			"Deepening ReactJS Knowledge: This project acted as a catalyst in solidifying our understanding of ReactJS, its best practices, and the potential it offers in web development."
+		  ]
+		},
+		"repoLink": "https://github.com/Andramed/reactors-project",
+		"usedTechNologies": ["mongoDb", "next", "react", "javascript", "nodeJs", "tailwind", "saas"]
+	  }
+	  
+	]
+  }
+  

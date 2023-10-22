@@ -1,0 +1,12 @@
+@import '../../../src/styles/variables';
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: $primary-blue;
+	color: rgb(14, 14, 14);
+	text-align: center;
+	
+}

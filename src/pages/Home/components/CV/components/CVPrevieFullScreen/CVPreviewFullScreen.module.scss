@@ -1,0 +1,61 @@
+@import '../../../../../../styles/mixin';
+@import '../../../../../../styles/variables';
+
+.container {
+		
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 2rem;
+	background: rgba(54, 54, 54, 0.7); /* Negru transparent */
+	z-index: 1000; /* Valoare mare pentru a asigura că este deasupra altor elemente */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+	div {
+		width: fit-content !important;
+		canvas {
+			height: 93vh !important;
+		}
+		
+	}
+		.containerBtns{
+			svg{
+				width: 1rem;
+			}
+		}
+
+	@include respond-to(desktop) {
+		div {
+			
+			canvas {
+				
+				height: 90vh !important;
+			}
+		}
+	}
+
+	@include respond-to(tablet) {
+
+		div{
+			canvas {
+				height: 95vh !important;
+				
+			}
+		}
+	}
+	@include respond-to(mobile) {
+		
+		div {
+			
+			canvas{
+				margin-top: 1vh;
+				width: 100vw !important;
+				height: 100vh !important;
+			}
+		}
+	}
+}
